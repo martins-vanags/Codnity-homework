@@ -14,6 +14,6 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/articles', [ArticleController::class, 'show'])->middleware('auth');
-Route::delete('/articles/{article}/destroy', [ArticleController::class, 'destroy'])->middleware('auth');
+Route::get('/articles', [ArticleController::class, 'show'])->middleware('auth')->name('articles');
+Route::delete('/articles/{article}/destroy', [ArticleController::class, 'destroy'])->middleware('auth')->name('article.destroy');
 require __DIR__.'/auth.php';
