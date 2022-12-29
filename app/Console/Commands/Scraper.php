@@ -40,7 +40,5 @@ class Scraper extends Command
                 ]);
             }
         }
-
-
     }
 }

@@ -19,5 +19,4 @@ class Articles extends Model
         'updated_at',
         'link',
     ];
-
 }
